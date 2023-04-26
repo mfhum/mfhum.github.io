@@ -17,7 +17,8 @@
       text-align: center;
       margin: auto;
       position: relative;
-      font-family: "Kanit", sans-serif;
+      font-family: "Pathway Extreme", sans-serif;
+      font-weight: bold;
       color: #121212;
     }
   }
@@ -37,35 +38,40 @@
     left: 60%;
     top: 50%;
     bottom: 50%;
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
+    margin-left: -7rem;
     margin-top: -5rem;
-    margin-left: -6rem;
+    .animatedcircle {
+      width: 220px;
+      height: 220px;
+      margin: -0.5px -0.5px;
+      border-radius: 50%;
+      border-style: dashed;
+      animation-name: spin;
+      animation-duration: 10000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
     .learnmore {
       background-color: black;
-      color: beige;
+      color: white;
       border: none;
       border-radius: 50%;
+      margin: 10.5px 10.5px;
       width: 200px;
       height: 200px;
-      font-size: 2em;
+      font-size: 2.3em;
       cursor: pointer;
-      font-family: "Kanit", sans-serif;
+      font-family: "Pathway Extreme", sans-serif;
     }
-    /* .learnmore {
-      background-color: black;
-      color: beige;
-      border: none;
-      top: 50%;
-      bottom: 50%;
-      margin-left: -10%;
-      width: 20vw;
-      height: 20vw;
-      border-radius: 50%;
-      font-size: 2.4vw;
-      cursor: pointer;
-      font-family: "Kanit", sans-serif;
-      position: absolute;
-    } */
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
