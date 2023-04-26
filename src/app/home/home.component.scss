@@ -32,7 +32,7 @@
     float: right;
   }
 
-  .bcontainer {
+  .zoomies {
     position: absolute;
     display: flex;
     left: 60%;
@@ -42,6 +42,11 @@
     height: 220px;
     margin-left: -7rem;
     margin-top: -5rem;
+    transition: transform 1s;
+  }
+  .bcontainer {
+    position: absolute;
+    display: flex;
     .animatedcircle {
       width: 220px;
       height: 220px;
@@ -67,6 +72,7 @@
     }
   }
 }
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -74,4 +80,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.zoomies:hover {
+  transform: scale(1.3);
 }
