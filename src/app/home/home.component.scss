@@ -1,7 +1,6 @@
 .homepage {
   width: 100%;
   height: 100%;
-  background-color: rebeccapurple;
   float: left;
   .titlebox {
     width: 60%;
@@ -97,4 +96,46 @@
 
 .zoomies:hover {
   transform: scale(1.8);
+}
+
+@media screen and (max-width: 1250px) {
+  .homepage {
+    .titlebox {
+      width: 100%;
+      height: 80%;
+      float: none;
+      .title {
+        font-size: 2.5rem;
+      }
+    }
+
+    .showoff {
+      width: 100%;
+      height: 20%;
+      float: none;
+    }
+
+    .zoomies {
+      left: 50%;
+      top: 80%;
+      margin-left: -3.75rem;
+      margin-top: -3.5rem;
+      width: 110px;
+      height: 110px;
+    }
+
+    .bcontainer {
+      .animatedcircle {
+        width: 110px;
+        height: 110px;
+        margin: -0.25px -0.25px;
+      }
+      .learnmore {
+        margin: 7.75px 7.75px;
+        width: 100px;
+        height: 100px;
+        font-size: 1.15em;
+      }
+    }
+  }
 }
