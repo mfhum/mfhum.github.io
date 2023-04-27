@@ -54,7 +54,7 @@
       border-radius: 50%;
       border-style: dashed;
       animation: spin;
-      animation-duration: 5000ms;
+      animation-duration: 10000ms;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
     }
@@ -81,11 +81,17 @@
   0% {
     transform: scale(1) rotate(0deg);
   }
-  50% {
+  25% {
     transform: scale(1.1) rotate(90deg);
   }
-  100% {
+  50% {
     transform: scale(1) rotate(180deg);
+  }
+  75% {
+    transform: scale(1.1) rotate(270deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
   }
 }
 
