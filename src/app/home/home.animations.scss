@@ -1,0 +1,112 @@
+@keyframes spin {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.1) rotate(90deg);
+  }
+  50% {
+    transform: scale(1) rotate(180deg);
+  }
+  75% {
+    transform: scale(1.1) rotate(270deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.zoomies:hover {
+  transform: scale(1.8);
+}
+
+@keyframes transitionInShowOff {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 40%;
+    opacity: 1;
+  }
+}
+@keyframes transitionInShowOffResponsive {
+  0% {
+    height: 0%;
+    opacity: 0;
+  }
+  100% {
+    height: 20%;
+    opacity: 1;
+  }
+}
+
+@keyframes transitionInShowOffTitle {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes transitionInShowOffResponsiveTitle {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 80%;
+  }
+}
+
+@keyframes transitionCircle {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@media screen and (min-width: 1251px) {
+  .homepage {
+    .titlebox {
+      animation: transitionInShowOffTitle 3s;
+    }
+    .showoff {
+      animation: transitionInShowOff 3s;
+    }
+    .bcontainer {
+      animation: transitionCircle 3s;
+      .animatedcircle {
+        animation: spin;
+        animation-delay: 1.5s;
+        animation-duration: 10000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .titlebox {
+    animation: transitionInShowOffResponsiveTitle 3s;
+  }
+  .showoff {
+    animation: transitionInShowOffResponsive 3s;
+  }
+  .bcontainer {
+    animation: transitionCircle 3s;
+    .animatedcircle {
+      animation: spin;
+      animation-delay: 1.5s;
+      animation-duration: 10000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+}
