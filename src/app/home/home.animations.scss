@@ -25,28 +25,7 @@
   font-size: 2rem;
   position: relative;
   padding: 0;
-  overflow: hidden;
-
-  transition: transform 0.5s; //will be inherited
-  //transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
   display: block;
-
-  &::after {
-    content: "View my Work";
-    display: inline-block;
-    transform: translateY(100%);
-    position: absolute;
-    left: 0;
-    transition: inherit;
-    text-decoration: underline;
-  }
-
-  > span {
-    display: inline-block;
-    text-decoration: underline;
-    transform: translateY(0%);
-    transition: inherit;
-  }
 
   &:hover {
     > span {
@@ -95,6 +74,10 @@
   0% {
     width: 0%;
     opacity: 0;
+  }
+  50% {
+    width: 20%;
+    opacity: 0.1;
   }
   100% {
     width: 40%;

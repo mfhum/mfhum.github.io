@@ -53,13 +53,7 @@
       }
     }
   }
-  .selected-title {
-    width: 3700%;
-  }
-}
-
-@media screen and (max-width: 1250px) {
-  .selected {
+  #selected {
     .selected-title {
       margin-top: 10rem;
       width: 4000%;

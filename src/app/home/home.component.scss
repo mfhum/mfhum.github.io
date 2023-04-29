@@ -27,10 +27,16 @@
       .text {
         font-size: 1.5rem;
       }
+      .seemore {
+        a {
+          color: black;
+        }
+      }
     }
   }
 
   .showoff {
+    background-image: url("./../../assets/images/Screenshot\ 2023-04-29\ 182307.png");
     background-color: #2c3e50;
     width: 40%;
     height: 100%;
@@ -78,7 +84,7 @@
   }
 }
 
-.selected {
+#selected {
   overflow-x: hidden;
   .selected-title {
     margin-top: 5rem;
