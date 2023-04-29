@@ -8,17 +8,26 @@
     background-color: white;
     position: relative;
     float: left;
-    .title {
-      font-size: 3rem;
+    .textbox {
+      margin-top: -10rem;
       top: 50%;
       bottom: 50%;
-      height: auto;
-      text-align: center;
-      margin: auto;
-      position: relative;
+      left: 15%;
+      width: 70%;
+      line-height: 4rem;
       font-family: "Pathway Extreme", sans-serif;
-      font-weight: 1000;
+      height: auto;
+      position: relative;
       color: #121212;
+      .name {
+        font-size: 1.5rem;
+      }
+      .jobs {
+        font-size: 3.5rem;
+      }
+      .text {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -51,21 +60,19 @@
       height: 220px;
       margin: -0.5px -0.5px;
       border-radius: 50%;
+      opacity: 0.6;
+      border-color: grey;
       border-style: dashed;
     }
     .learnmore {
-      background: linear-gradient(
-        0deg,
-        rgba(116, 146, 168, 1) 0%,
-        rgba(184, 92, 231, 1) 100%
-      );
+      background-color: #212121;
       color: white;
       border: none;
       border-radius: 50%;
       margin: 11.5px 11.5px;
       width: 200px;
       height: 200px;
-      font-size: 2.3em;
+      font-size: 1.5em;
       cursor: pointer;
       font-family: "Pathway Extreme", sans-serif;
     }

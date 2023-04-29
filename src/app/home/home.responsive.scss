@@ -4,12 +4,27 @@
       width: 100%;
       height: 80%;
       float: none;
-      .title {
-        font-size: 2.5rem;
+      .textbox {
+        width: 70%;
+        line-height: 3rem;
+        .name {
+          margin-top: 5rem;
+          font-size: 1rem;
+        }
+        .jobs {
+          font-size: 2rem;
+        }
+        .text {
+          font-size: 0.8rem;
+        }
+        .seemore {
+          font-size: 1.5rem;
+        }
       }
     }
 
     .showoff {
+      margin-top: 5rem;
       width: 100%;
       height: 20%;
       float: none;
