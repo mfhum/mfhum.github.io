@@ -1,0 +1,45 @@
+.selected-title {
+  margin-top: 3%;
+  width: 1000%;
+
+  .selected-text {
+    float: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 3rem;
+  }
+  .dot {
+    margin-top: 0.75rem;
+    float: left;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+}
+
+//animation
+.selected-title {
+  animation: movement 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes movement {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-8%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+// responsive
+@media screen and (max-width: 1250px) {
+  .selected-title {
+    width: 3700%;
+  }
+}

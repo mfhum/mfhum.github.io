@@ -1,7 +1,6 @@
 .homepage {
   width: 100%;
   height: 100%;
-  float: left;
   .titlebox {
     width: 60%;
     height: 100%;
@@ -77,4 +76,33 @@
       font-family: "Pathway Extreme", sans-serif;
     }
   }
+}
+
+.selected {
+  overflow-x: hidden;
+  .selected-title {
+    margin-top: 5rem;
+    width: 1000%;
+    .selected-text {
+      float: left;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      font-size: 3rem;
+    }
+    .dot {
+      margin-top: 0.75rem;
+      float: left;
+      background-color: black;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.selected-show {
+  margin-top: 4rem;
+  width: 100%;
+  height: 86%;
+  background-color: #2c3e50;
 }

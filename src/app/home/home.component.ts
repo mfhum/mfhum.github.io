@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss', './home.responsive.scss', './home.animations.scss']
 })
 export class HomeComponent {
-
+//function to return list of numbers from 0 to n-1
+numSequence(n: number): Array<number> {
+  return Array(n);
+}
 }

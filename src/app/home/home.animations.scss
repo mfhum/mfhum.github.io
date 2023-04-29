@@ -159,8 +159,24 @@
       }
     }
   }
+  .selected-title {
+    animation: movement 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
 }
 
+@keyframes movement {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-8%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 @media screen and (max-width: 1250px) {
   .titlebox {
     animation: transitionInShowOffResponsiveTitle 3s;
@@ -177,5 +193,10 @@
       animation-iteration-count: infinite;
       animation-timing-function: linear;
     }
+  }
+  .selected-title {
+    animation: movement 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 }
