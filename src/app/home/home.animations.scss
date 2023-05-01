@@ -1,21 +1,3 @@
-@keyframes spin {
-  0% {
-    transform: scale(1) rotate(0deg);
-  }
-  25% {
-    transform: scale(1.1) rotate(90deg);
-  }
-  50% {
-    transform: scale(1) rotate(180deg);
-  }
-  75% {
-    transform: scale(1.1) rotate(270deg);
-  }
-  100% {
-    transform: scale(1) rotate(360deg);
-  }
-}
-
 .zoomies:hover {
   transform: scale(1.8);
 }
@@ -133,13 +115,6 @@
     }
     .bcontainer {
       animation: transitionCircle 6s;
-      .animatedcircle {
-        animation: spin;
-        animation-delay: 1.5s;
-        animation-duration: 10000ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-      }
     }
   }
   .selected-title {
@@ -169,13 +144,6 @@
   }
   .bcontainer {
     animation: transitionCircle 3s;
-    .animatedcircle {
-      animation: spin;
-      animation-delay: 1.5s;
-      animation-duration: 10000ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-    }
   }
   .selected-title {
     animation: movement 20s;
