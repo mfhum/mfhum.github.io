@@ -36,12 +36,77 @@
   }
 
   .showoff {
-    background-color: #2c3e50;
+    display: flex;
     width: 40%;
     height: 100%;
-    right: 0%;
-    position: absolute;
     float: right;
+    overflow: hidden;
+    .scroll-parent {
+      position: relative;
+      overflow: hidden;
+      width: 40%;
+      height: 100%;
+      overflow-y: hidden;
+
+      float: left;
+      .scroll-element {
+        position: relative;
+        .pic {
+          margin-bottom: 0.5%;
+          border-top: solid;
+          border-bottom: solid;
+          border-color: white;
+          width: 100%;
+          height: 33cqb;
+        }
+        .pic-l1 {
+          background-image: url(./../../assets/images/webdesign.jpg);
+          background-position: -100px -80px;
+          background-size: 180%;
+        }
+        .pic-l2 {
+          background-image: url(./../../assets/images/artz.jpg);
+          background-position: -25px -0px;
+          background-size: 120%;
+        }
+        .pic-l3 {
+          background-image: url(./../../assets/images/head.jpg);
+          background-position: -230px -00px;
+          background-size: 250%;
+        }
+
+        .pic-m1 {
+          background-image: url(./../../assets/images/headd.jpg);
+          background-position: -240px -25px;
+          background-size: 250%;
+        }
+        .pic-m2 {
+          background-image: url(./../../assets/images/coolglasses.jpg);
+          background-position: -120px 0px;
+          background-size: 225%;
+        }
+        .pic-m3 {
+          background-image: url(./../../assets/images/chair.jpg);
+          background-position: -270px -50px;
+          background-size: 300%;
+        }
+        .pic-r1 {
+          background-image: url(./../../assets/images/galaxy.png);
+          background-position: -230px 0px;
+          background-size: 300%;
+        }
+        .pic-r2 {
+          background-image: url(./../../assets/images/skull.jpg);
+          background-position: -300px -50px;
+          background-size: 300%;
+        }
+        .pic-r3 {
+          background-image: url(./../../assets/images/bvabo.jpg);
+          background-position: -60px 0px;
+          background-size: 150%;
+        }
+      }
+    }
   }
 
   .zoomies {
