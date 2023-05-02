@@ -57,12 +57,14 @@
     width: 0%;
     opacity: 0;
   }
+  30% {
+    width: 40%;
+    opacity: 0;
+  }
   50% {
-    width: 20%;
-    opacity: 0.1;
+    opacity: 0;
   }
   100% {
-    width: 40%;
     opacity: 1;
   }
 }
@@ -116,25 +118,22 @@
   }
 }
 
-.primary {
-  animation: scroll 20s linear infinite;
-}
-.secondary {
-  animation: scroll 20s linear infinite;
-}
-
-.primarytwo {
-  animation: scrollback 25s linear infinite;
-}
-.secondarytwo {
-  animation: scrollback 25s linear infinite;
+@keyframes scrollresponsive {
+  from {
+    top: 0%;
+  }
+  to {
+    top: -66%;
+  }
 }
 
-.primarythree {
-  animation: scroll 15s linear infinite;
-}
-.secondarythree {
-  animation: scroll 15s linear infinite;
+@keyframes scrollbackresponsive {
+  from {
+    top: -66%;
+  }
+  to {
+    top: 0%;
+  }
 }
 
 .left {
@@ -151,24 +150,44 @@
     .titlebox {
       .textbox {
         .name {
-          animation: transitionHey 4s linear;
+          animation: transitionHey 6s linear;
         }
         .shownlater {
-          animation: transitionTextAfterHey 4s;
+          animation: transitionTextAfterHey 6s linear;
         }
       }
     }
     .showoff {
-      animation: transitionInShowOff 3s;
+      animation: transitionInShowOff 13s linear;
     }
     .bcontainer {
-      animation: transitionCircle 6s;
+      animation: transitionCircle 6s linear;
     }
   }
   .selected-title {
     animation: movement 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+  }
+  .primary {
+    animation: scroll 20s linear infinite 6s;
+  }
+  .secondary {
+    animation: scroll 20s linear infinite 6s;
+  }
+
+  .primarytwo {
+    animation: scrollback 25s linear infinite 6s;
+  }
+  .secondarytwo {
+    animation: scrollback 25s linear infinite 6s;
+  }
+
+  .primarythree {
+    animation: scroll 15s linear infinite 6s;
+  }
+  .secondarythree {
+    animation: scroll 15s linear infinite 6s;
   }
 }
 
@@ -185,17 +204,37 @@
 }
 @media screen and (max-width: 1250px) {
   .titlebox {
-    animation: transitionInShowOffResponsiveTitle 3s;
+    animation: transitionInShowOffResponsiveTitle 3s linear;
   }
   .showoff {
     animation: transitionInShowOffResponsive 3s;
   }
   .bcontainer {
-    animation: transitionCircle 3s;
+    animation: transitionCircle 3s linear;
   }
   .selected-title {
     animation: movement 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+  }
+  .primary {
+    animation: scrollresponsive 10s linear infinite 3s;
+  }
+  .secondary {
+    animation: scrollresponsive 20s linear infinite 3s;
+  }
+
+  .primarytwo {
+    animation: scrollbackresponsive 15s linear infinite 3s;
+  }
+  .secondarytwo {
+    animation: scrollbackresponsive 15s linear infinite 3s;
+  }
+
+  .primarythree {
+    animation: scrollresponsive 8s linear infinite 3s;
+  }
+  .secondarythree {
+    animation: scrollresponsive 8s linear infinite 3s;
   }
 }
