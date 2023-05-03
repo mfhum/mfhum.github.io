@@ -1,122 +1,46 @@
-.showoff {
-  display: flex;
-  width: 40%;
+.homepages {
+  width: 100%;
   height: 100%;
-  float: right;
-  overflow: hidden;
-  .scroll-parent {
-    position: relative;
-    overflow: hidden;
-    width: 40%;
+  .titleboxs {
+    width: 60%;
     height: 100%;
-    overflow-y: hidden;
-
+    background-color: white;
+    position: relative;
     float: left;
-    .scroll-element {
+    .textboxs {
+      margin-top: -10rem;
+      top: 50%;
+      bottom: 50%;
+      left: 15%;
+      width: 70%;
+      line-height: 4rem;
+      font-family: "Pathway Extreme", sans-serif;
+      height: auto;
       position: relative;
-      .pic {
-        margin-bottom: 0.5%;
-        border-top: solid;
-        border-bottom: solid;
-        border-color: white;
-        width: 100%;
-        height: 33cqb;
+      color: #121212;
+      .jobss {
+        font-size: 3.5rem;
       }
-      .pic-l1 {
-        background-image: url(./../../assets/images/webdesign.jpg);
-        background-position: -100px -80px;
-        background-size: 180%;
+      .names {
+        font-size: 1.5rem;
       }
-      .pic-l2 {
-        background-image: url(./../../assets/images/artz.jpg);
-        background-position: -25px -0px;
-        background-size: 120%;
+      .texts {
+        font-size: 1.5rem;
       }
-      .pic-l3 {
-        background-image: url(./../../assets/images/head.jpg);
-        background-position: -230px -00px;
-        background-size: 250%;
-      }
-
-      .pic-m1 {
-        background-image: url(./../../assets/images/headd.jpg);
-        background-position: -240px -25px;
-        background-size: 250%;
-      }
-      .pic-m2 {
-        background-image: url(./../../assets/images/coolglasses.jpg);
-        background-position: -120px 0px;
-        background-size: 225%;
-      }
-      .pic-m3 {
-        background-image: url(./../../assets/images/chair.jpg);
-        background-position: -270px -50px;
-        background-size: 300%;
-      }
-      .pic-r1 {
-        background-image: url(./../../assets/images/galaxy.png);
-        background-position: -230px 0px;
-        background-size: 300%;
-      }
-      .pic-r2 {
-        background-image: url(./../../assets/images/skull.jpg);
-        background-position: -300px -50px;
-        background-size: 300%;
-      }
-      .pic-r3 {
-        background-image: url(./../../assets/images/bvabo.jpg);
-        background-position: -60px 0px;
-        background-size: 150%;
+      .seemores {
+        a {
+          color: black;
+        }
       }
     }
   }
-}
 
-.primary {
-  animation: scroll 20s linear infinite;
-}
-.secondary {
-  animation: scroll 20s linear infinite;
-}
-
-.primarytwo {
-  animation: scrollback 25s linear infinite;
-}
-.secondarytwo {
-  animation: scrollback 25s linear infinite;
-}
-
-.primarythree {
-  animation: scroll 15s linear infinite;
-}
-.secondarythree {
-  animation: scroll 15s linear infinite;
-}
-
-.left {
-  margin-right: 0.5rem;
-}
-.mid {
-  margin-right: 0.5rem;
-}
-.right {
-  margin-right: 0.5rem;
-}
-
-@keyframes scroll {
-  from {
-    top: 0%;
-  }
-  to {
-    top: -100%;
-  }
-}
-
-@keyframes scrollback {
-  from {
-    top: -100%;
-  }
-  to {
-    top: 0%;
+  .showoffs {
+    background-color: green;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    float: right;
+    overflow: hidden;
   }
 }

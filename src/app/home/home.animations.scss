@@ -70,11 +70,17 @@
 }
 @keyframes transitionInShowOffResponsive {
   0% {
-    height: 0%;
+    height: 100%;
+    opacity: 0;
+  }
+  30% {
+    height: 60%;
+    opacity: 0;
+  }
+  40% {
     opacity: 0;
   }
   100% {
-    height: 20%;
     opacity: 1;
   }
 }
@@ -84,7 +90,7 @@
     height: 100%;
   }
   100% {
-    height: 80%;
+    height: 60%;
   }
 }
 
@@ -112,24 +118,6 @@
 @keyframes scrollback {
   from {
     top: -100%;
-  }
-  to {
-    top: 0%;
-  }
-}
-
-@keyframes scrollresponsive {
-  from {
-    top: 0%;
-  }
-  to {
-    top: -66%;
-  }
-}
-
-@keyframes scrollbackresponsive {
-  from {
-    top: -66%;
   }
   to {
     top: 0%;
@@ -207,7 +195,7 @@
     animation: transitionInShowOffResponsiveTitle 3s linear;
   }
   .showoff {
-    animation: transitionInShowOffResponsive 3s;
+    animation: transitionInShowOffResponsive 13s;
   }
   .bcontainer {
     animation: transitionCircle 3s linear;
@@ -218,23 +206,23 @@
     animation-timing-function: linear;
   }
   .primary {
-    animation: scrollresponsive 10s linear infinite 3s;
+    animation: scroll 10s linear infinite 3s;
   }
   .secondary {
-    animation: scrollresponsive 20s linear infinite 3s;
+    animation: scroll 10s linear infinite 3s;
   }
 
   .primarytwo {
-    animation: scrollbackresponsive 15s linear infinite 3s;
+    animation: scrollback 15s linear infinite 3s;
   }
   .secondarytwo {
-    animation: scrollbackresponsive 15s linear infinite 3s;
+    animation: scrollback 15s linear infinite 3s;
   }
 
   .primarythree {
-    animation: scrollresponsive 8s linear infinite 3s;
+    animation: scroll 8s linear infinite 3s;
   }
   .secondarythree {
-    animation: scrollresponsive 8s linear infinite 3s;
+    animation: scroll 8s linear infinite 3s;
   }
 }

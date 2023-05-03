@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,5 +10,11 @@ export class HomeComponent {
 //function to return list of numbers from 0 to n-1
 numSequence(n: number): Array<number> {
   return Array(n);
+}
+constructor(private router: Router) {}
+
+onContact(){
+  this.router.navigateByUrl('/test');
+  console.log("test");
 }
 }

@@ -2,7 +2,7 @@
   .homepage {
     .titlebox {
       width: 100%;
-      height: 80%;
+      height: 60%;
       float: none;
       .textbox {
         width: 70%;
@@ -27,7 +27,7 @@
       display: flex;
       margin-top: 5rem;
       width: 100%;
-      height: 20%;
+      height: 40%;
       float: none;
       .scroll-parent {
         .scroll-element {
@@ -38,43 +38,34 @@
             border-bottom: solid;
             border-color: white;
             width: 100%;
-            height: 9.5cqb;
+            height: 12.9cqb;
           }
           .pic-l1 {
-            background-position: -0px -100px;
             background-size: 100%;
           }
           .pic-l2 {
-            background-position: -25px -200px;
             background-size: 100%;
           }
           .pic-l3 {
-            background-position: -30px -00px;
-            background-size: 200%;
+            background-size: 100%;
           }
 
           .pic-m1 {
-            background-position: 0px -200px;
             background-size: 100%;
           }
           .pic-m2 {
-            background-position: -120px -200px;
             background-size: 150%;
           }
           .pic-m3 {
-            background-position: -0px -50px;
             background-size: 130%;
           }
           .pic-r1 {
-            background-position: 0px -180px;
             background-size: 120%;
           }
           .pic-r2 {
-            background-position: -100px -400px;
             background-size: 100%;
           }
           .pic-r3 {
-            background-position: -0px 0px;
             background-size: 100%;
           }
         }
@@ -83,7 +74,7 @@
 
     .zoomies {
       left: 50%;
-      top: 80%;
+      top: 60%;
       margin-left: -3.75rem;
       margin-top: -3.5rem;
       width: 110px;
@@ -114,46 +105,36 @@
   }
 }
 
-@media only screen and (max-width: 2100px) and (min-width: 1251px) {
+@media only screen and (max-width: 2000px) and (min-width: 1251px) {
   .homepage {
     .showoff {
       .scroll-parent {
         .scroll-element {
           .pic-l1 {
-            background-position: -100px -80px;
             background-size: 200%;
           }
           .pic-l2 {
-            background-position: -25px -0px;
             background-size: 200%;
           }
           .pic-l3 {
-            background-position: -230px -00px;
             background-size: 380%;
           }
-
           .pic-m1 {
-            background-position: -80px 0px;
             background-size: 200%;
           }
           .pic-m2 {
-            background-position: -120px 0px;
             background-size: 375%;
           }
           .pic-m3 {
-            background-position: -300px -50px;
             background-size: 475%;
           }
           .pic-r1 {
-            background-position: -240px -25px;
             background-size: 400%;
           }
           .pic-r2 {
-            background-position: -100px -100px;
             background-size: 250%;
           }
           .pic-r3 {
-            background-position: -100px 0px;
             background-size: 250%;
           }
         }
@@ -162,81 +143,43 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   .homepage {
     .showoff {
       .scroll-parent {
         .scroll-element {
+          .pic {
+            height: 13cqb;
+          }
           .pic-l1 {
-            background-position: -0px -100px;
-            background-size: 200%;
-          }
-          .pic-l2 {
-            background-position: -25px -50px;
-            background-size: 130%;
-          }
-          .pic-l3 {
-            background-position: -30px -00px;
-            background-size: 200%;
-          }
-
-          .pic-m1 {
-            background-position: 0px -100px;
-            background-size: 100%;
-          }
-          .pic-m2 {
-            background-position: -0px -0px;
-            background-size: 200%;
-          }
-          .pic-m3 {
-            background-position: -50px -0px;
-            background-size: 200%;
-          }
-          .pic-r1 {
-            background-position: -50px -80px;
             background-size: 250%;
           }
+          .pic-l2 {
+            background-size: 170%;
+          }
+          .pic-l3 {
+            background-size: 230%;
+          }
+          .pic-m1 {
+            background-size: 130%;
+          }
+          .pic-m2 {
+            background-size: 230%;
+          }
+          .pic-m3 {
+            background-size: 230%;
+          }
+          .pic-r1 {
+            background-size: 280%;
+          }
           .pic-r2 {
-            background-position: -100px -50px;
-            background-size: 200%;
+            background-size: 230%;
           }
           .pic-r3 {
-            background-position: -0px 0px;
-            background-size: 150%;
+            background-size: 180%;
           }
         }
       }
     }
-
-    .zoomies {
-      left: 50%;
-      top: 80%;
-      margin-left: -3.75rem;
-      margin-top: -3.5rem;
-      width: 110px;
-      height: 110px;
-    }
-
-    .bcontainer {
-      .learnmore {
-        margin: 7.75px 7.75px;
-        width: 100px;
-        height: 100px;
-        font-size: 1.15em;
-      }
-    }
-  }
-
-  #selected {
-    .selected-title {
-      margin-top: 10rem;
-      width: 4000%;
-    }
-  }
-  .selected-show {
-    margin-top: 4rem;
-    width: 100%;
-    height: 85%;
-    background-color: #2c3e50;
   }
 }
