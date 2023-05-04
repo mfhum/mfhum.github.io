@@ -1,3 +1,4 @@
+import { Binary } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -11,10 +12,20 @@ export class HomeComponent {
 numSequence(n: number): Array<number> {
   return Array(n);
 }
+//function to declare if you are in contact me
+  isContacting:boolean = false;
+
 constructor(private router: Router) {}
 
 onContact(){
-  this.router.navigateByUrl('/test');
-  console.log("test");
+  var returningbol:boolean = !this.isContacting;
+  return this.isContacting = returningbol;
+  console.log(returningbol);
 }
+isOnContact(){
+  console.log("check: " + this.isContacting)
+  return this.isContacting;
+  
+}
+
 }

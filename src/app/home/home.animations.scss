@@ -2,6 +2,10 @@
   transform: scale(1.8);
 }
 
+.learnmore:click {
+  transform: opacity(0) 10s;
+}
+
 .seemore {
   width: 15rem;
   font-size: 2rem;
@@ -124,6 +128,15 @@
   }
 }
 
+@keyframes contactform {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .left {
   margin-right: 0.5rem;
 }
@@ -144,6 +157,9 @@
           animation: transitionTextAfterHey 6s linear;
         }
       }
+    }
+    .contact {
+      animation: contactform 5s;
     }
     .showoff {
       animation: transitionInShowOff 13s linear;

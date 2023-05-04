@@ -33,6 +33,75 @@
         }
       }
     }
+    .textbox {
+      margin-top: -13rem;
+      top: 50%;
+      bottom: 50%;
+      left: 15%;
+      width: 70%;
+      line-height: 4rem;
+      font-family: "Pathway Extreme", sans-serif;
+      height: auto;
+      position: relative;
+      color: #121212;
+      .jobs {
+        font-size: 3.5rem;
+        margin-bottom: 5vh;
+      }
+
+      .form-field {
+        width: 60%;
+        border: 0;
+        border-bottom: 2px solid black;
+        outline: 0;
+        font-size: 1.3rem;
+        color: black;
+        padding: 7px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+        font-family: "Pathway Extreme", sans-serif;
+      }
+      .form-field:focus {
+        padding-bottom: 6px;
+        border-width: 3px;
+        border-image: linear-gradient(to right, black, grey);
+        border-image-slice: 1;
+      }
+      .form-field:focus::placeholder {
+        color: black;
+        font-weight: 600;
+      }
+      .form-field:hover::placeholder {
+        color: black;
+        font-weight: 600;
+      }
+      .form-field {
+        &:required,
+        &:invalid {
+          box-shadow: none;
+        }
+      }
+      .btn {
+        margin-top: 5vh;
+        color: black;
+        border: 1px solid white;
+        padding: 15px 25px;
+        letter-spacing: 4px;
+        margin-right: 2rem;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid black;
+        font-weight: bold;
+        font-family: "Pathway Extreme", sans-serif;
+      }
+
+      .btn:hover {
+        background-color: rgb(59, 59, 59);
+        color: white;
+      }
+    }
   }
 
   .showoff {
