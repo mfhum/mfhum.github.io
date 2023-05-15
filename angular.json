@@ -35,7 +35,6 @@
               "src/app/home/home.animations.scss",
               "src/app/home/home.responsive.scss",
               "src/app/home/home.showoff.scss"
-
             ],
             "scripts": []
           },
