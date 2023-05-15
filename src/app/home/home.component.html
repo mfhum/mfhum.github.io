@@ -12,12 +12,10 @@
         </div>
         <div class="textbox contact" *ngIf="isOnContact()">
             <div class="jobs">Let's work together!</div>
-            <form action="mailto:marius@hummelweb.net?subject=Let's work together!&body=" method="post" enctype="multipart/form-data">
-                <div class="buttoncontainer">
-                    <button class="btn draw-border" type="submit" enctype="multipart/form-data">Send me a mail</button>
-                    <button class="btn" (click)="onContact()"><- Back to Home</button>
-                </div>
-            </form>
+            <div class="buttoncontainer">
+                <button class="btn draw-border" onclick="location.href='mailto:marius@hummelweb.net?subject=Contact request from hummelweb.net!&body='" enctype="multipart/form-data">Send me an Email</button>
+                <button class="btn" (click)="onContact()"><- Back to Home</button>
+            </div>
         </div>
     </div>
 
