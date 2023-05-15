@@ -2,39 +2,185 @@
   .homepage {
     .titlebox {
       width: 100%;
-      height: 80%;
+      height: 60%;
       float: none;
-      .title {
-        font-size: 2.5rem;
+      .textbox {
+        width: 70%;
+        line-height: 3rem;
+        .name {
+          margin-top: 5rem;
+          font-size: 1rem;
+        }
+        .jobs {
+          font-size: 2rem;
+        }
+        .text {
+          font-size: 0.8rem;
+        }
+        .seemore {
+          font-size: 1.5rem;
+        }
       }
     }
 
     .showoff {
+      display: flex;
+      margin-top: 5rem;
       width: 100%;
-      height: 20%;
+      height: 40%;
       float: none;
+      .scroll-parent {
+        .scroll-element {
+          position: relative;
+          .pic {
+            margin-bottom: 0.5%;
+            border-top: solid;
+            border-bottom: solid;
+            border-color: white;
+            width: 100%;
+            height: 12.9cqb;
+          }
+          .pic-l1 {
+            background-size: 100%;
+          }
+          .pic-l2 {
+            background-size: 100%;
+          }
+          .pic-l3 {
+            background-size: 100%;
+          }
+
+          .pic-m1 {
+            background-size: 100%;
+          }
+          .pic-m2 {
+            background-size: 150%;
+          }
+          .pic-m3 {
+            background-size: 130%;
+          }
+          .pic-r1 {
+            background-size: 120%;
+          }
+          .pic-r2 {
+            background-size: 100%;
+          }
+          .pic-r3 {
+            background-size: 100%;
+          }
+        }
+      }
     }
 
     .zoomies {
       left: 50%;
-      top: 80%;
+      top: 60%;
       margin-left: -3.75rem;
-      margin-top: -3.5rem;
+      margin-top: -2rem;
       width: 110px;
       height: 110px;
     }
 
     .bcontainer {
-      .animatedcircle {
-        width: 110px;
-        height: 110px;
-        margin: -0.25px -0.25px;
-      }
       .learnmore {
         margin: 7.75px 7.75px;
         width: 100px;
         height: 100px;
         font-size: 1.15em;
+      }
+    }
+  }
+
+  #selected {
+    .selected-title {
+      margin-top: 10rem;
+      width: 4000%;
+    }
+  }
+  .selected-show {
+    margin-top: 4rem;
+    width: 100%;
+    height: 85%;
+    .comingsoon {
+      line-height: 1;
+    }
+  }
+}
+
+@media only screen and (max-width: 2000px) and (min-width: 1251px) {
+  .homepage {
+    .showoff {
+      .scroll-parent {
+        .scroll-element {
+          .pic-l1 {
+            background-size: 200%;
+          }
+          .pic-l2 {
+            background-size: 200%;
+          }
+          .pic-l3 {
+            background-size: 380%;
+          }
+          .pic-m1 {
+            background-size: 200%;
+          }
+          .pic-m2 {
+            background-size: 375%;
+          }
+          .pic-m3 {
+            background-size: 475%;
+          }
+          .pic-r1 {
+            background-size: 400%;
+          }
+          .pic-r2 {
+            background-size: 250%;
+          }
+          .pic-r3 {
+            background-size: 250%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .homepage {
+    .showoff {
+      .scroll-parent {
+        .scroll-element {
+          .pic {
+            height: 13cqb;
+          }
+          .pic-l1 {
+            background-size: 250%;
+          }
+          .pic-l2 {
+            background-size: 170%;
+          }
+          .pic-l3 {
+            background-size: 230%;
+          }
+          .pic-m1 {
+            background-size: 130%;
+          }
+          .pic-m2 {
+            background-size: 230%;
+          }
+          .pic-m3 {
+            background-size: 230%;
+          }
+          .pic-r1 {
+            background-size: 280%;
+          }
+          .pic-r2 {
+            background-size: 230%;
+          }
+          .pic-r3 {
+            background-size: 180%;
+          }
+        }
       }
     }
   }

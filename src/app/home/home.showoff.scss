@@ -1,0 +1,81 @@
+.showoff {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+  .scroll-parent {
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    height: 100%;
+    overflow-y: hidden;
+    float: left;
+    .scroll-element {
+      position: relative;
+      .pic {
+        margin-bottom: 0.5%;
+        border-top: solid;
+        border-bottom: solid;
+        border-color: white;
+        width: 100%;
+        height: 32.7cqb;
+      }
+      .pic-l1 {
+        background-image: url(./../../assets/images/webdesign.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 180%;
+      }
+      .pic-l2 {
+        background-image: url(./../../assets/images/artz.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 120%;
+      }
+      .pic-l3 {
+        background-image: url(./../../assets/images/head.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 250%;
+      }
+
+      .pic-m1 {
+        background-image: url(./../../assets/images/otter.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 130%;
+      }
+      .pic-m2 {
+        background-image: url(./../../assets/images/coolglasses.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 225%;
+      }
+      .pic-m3 {
+        background-image: url(./../../assets/images/chair.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 300%;
+      }
+      .pic-r1 {
+        background-image: url(./../../assets/images/headd.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 250%;
+      }
+      .pic-r2 {
+        background-image: url(./../../assets/images/toyko.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 130%;
+      }
+      .pic-r3 {
+        background-image: url(./../../assets/images/bvabo.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 150%;
+      }
+    }
+  }
+}

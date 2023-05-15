@@ -1,23 +1,59 @@
-@keyframes spin {
-  0% {
-    transform: scale(1) rotate(0deg);
-  }
-  25% {
-    transform: scale(1.1) rotate(90deg);
-  }
-  50% {
-    transform: scale(1) rotate(180deg);
-  }
-  75% {
-    transform: scale(1.1) rotate(270deg);
-  }
-  100% {
-    transform: scale(1) rotate(360deg);
+.zoomies:hover {
+  transform: scale(1.8);
+}
+
+.learnmore:click {
+  transform: opacity(0) 10s;
+}
+
+.seemore {
+  width: 15rem;
+  font-size: 2rem;
+  position: relative;
+  padding: 0;
+  display: block;
+
+  &:hover {
+    > span {
+      transform: translateY(-100%);
+    }
+    &::after {
+      transform: translateY(0%);
+    }
   }
 }
 
-.zoomies:hover {
-  transform: scale(1.8);
+@keyframes transitionHey {
+  0% {
+    margin-left: 43%;
+    margin-top: 20%;
+    font-size: 3rem;
+  }
+  20% {
+    margin-left: 43%;
+    margin-top: 20%;
+    font-size: 3rem;
+  }
+  60% {
+    margin-top: 20%;
+    margin-left: 0;
+    font-size: 3rem;
+  }
+  100% {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+}
+@keyframes transitionTextAfterHey {
+  0% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes transitionInShowOff {
@@ -25,28 +61,31 @@
     width: 0%;
     opacity: 0;
   }
-  100% {
+  30% {
     width: 40%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
 @keyframes transitionInShowOffResponsive {
   0% {
-    height: 0%;
+    height: 100%;
+    opacity: 0;
+  }
+  30% {
+    height: 60%;
+    opacity: 0;
+  }
+  40% {
     opacity: 0;
   }
   100% {
-    height: 20%;
     opacity: 1;
-  }
-}
-
-@keyframes transitionInShowOffTitle {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 60%;
   }
 }
 
@@ -55,7 +94,7 @@
     height: 100%;
   }
   100% {
-    height: 80%;
+    height: 60%;
   }
 }
 
@@ -63,7 +102,7 @@
   0% {
     opacity: 0%;
   }
-  50% {
+  85% {
     opacity: 0%;
   }
   100% {
@@ -71,42 +110,135 @@
   }
 }
 
-@media screen and (min-width: 1251px) {
-  .homepage {
-    .titlebox {
-      animation: transitionInShowOffTitle 3s;
-    }
-    .showoff {
-      animation: transitionInShowOff 3s;
-    }
-    .bcontainer {
-      animation: transitionCircle 3s;
-      .animatedcircle {
-        animation: spin;
-        animation-delay: 1.5s;
-        animation-duration: 10000ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-      }
-    }
+@keyframes scroll {
+  from {
+    top: 0%;
+  }
+  to {
+    top: -100%;
   }
 }
 
+@keyframes scrollback {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+
+@keyframes contactform {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.left {
+  margin-right: 0.5rem;
+}
+.mid {
+  margin-right: 0.5rem;
+}
+.right {
+  margin-right: 0.5rem;
+}
+@media screen and (min-width: 1251px) {
+  .homepage {
+    .titlebox {
+      .textbox {
+        .name {
+          animation: transitionHey 6s linear;
+        }
+        .shownlater {
+          animation: transitionTextAfterHey 6s linear;
+        }
+      }
+    }
+    .contact {
+      animation: contactform 5s;
+    }
+    .showoff {
+      animation: transitionInShowOff 13s linear;
+    }
+    .bcontainer {
+      animation: transitionCircle 6s linear;
+    }
+  }
+  .selected-title {
+    animation: movement 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .primary {
+    animation: scroll 20s linear infinite 6s;
+  }
+  .secondary {
+    animation: scroll 20s linear infinite 6s;
+  }
+
+  .primarytwo {
+    animation: scrollback 25s linear infinite 6s;
+  }
+  .secondarytwo {
+    animation: scrollback 25s linear infinite 6s;
+  }
+
+  .primarythree {
+    animation: scroll 15s linear infinite 6s;
+  }
+  .secondarythree {
+    animation: scroll 15s linear infinite 6s;
+  }
+}
+
+@keyframes movement {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-8%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 @media screen and (max-width: 1250px) {
   .titlebox {
-    animation: transitionInShowOffResponsiveTitle 3s;
+    animation: transitionInShowOffResponsiveTitle 3s linear;
   }
   .showoff {
-    animation: transitionInShowOffResponsive 3s;
+    animation: transitionInShowOffResponsive 13s;
   }
   .bcontainer {
-    animation: transitionCircle 3s;
-    .animatedcircle {
-      animation: spin;
-      animation-delay: 1.5s;
-      animation-duration: 10000ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-    }
+    animation: transitionCircle 3s linear;
+  }
+  .selected-title {
+    animation: movement 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .primary {
+    animation: scroll 10s linear infinite 3s;
+  }
+  .secondary {
+    animation: scroll 10s linear infinite 3s;
+  }
+
+  .primarytwo {
+    animation: scrollback 15s linear infinite 3s;
+  }
+  .secondarytwo {
+    animation: scrollback 15s linear infinite 3s;
+  }
+
+  .primarythree {
+    animation: scroll 8s linear infinite 3s;
+  }
+  .secondarythree {
+    animation: scroll 8s linear infinite 3s;
   }
 }
