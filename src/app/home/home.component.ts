@@ -25,7 +25,6 @@ onContact(){
 isOnContact(){
   console.log("check: " + this.isContacting)
   return this.isContacting;
-  
 }
 
 }

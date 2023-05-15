@@ -12,18 +12,9 @@
         </div>
         <div class="textbox contact" *ngIf="isOnContact()">
             <div class="jobs">Let's work together!</div>
-            <form action="mailto:marius.hummel@bluewin.ch?subject=Let's work together!&body=message" method="post">
-                <div class="form-group field">
-                    <input type="text" class="form-field" placeholder="Your name...*" name="name" id='name' required />
-                </div>
-                <div class="form-group field">
-                    <input type="email" class="form-field" placeholder="Email*" name="email" id='email' required />
-                </div>
-                <div class="form-group field">
-                    <input type="text" class="form-field" placeholder="Message*" name="message" id='message' required />
-                </div>
+            <form action="mailto:marius@hummelweb.net?subject=Let's work together!&body=" method="post" enctype="multipart/form-data">
                 <div class="buttoncontainer">
-                    <button class="btn draw-border" type="submit">Send a mail</button>
+                    <button class="btn draw-border" type="submit" enctype="multipart/form-data">Send me a mail</button>
                     <button class="btn" (click)="onContact()"><- Back to Home</button>
                 </div>
             </form>
@@ -82,6 +73,8 @@
     </div>
 </div>
 
-<div class="selected-show"></div>
+<div class="selected-show">
+    <div class="comingsoon">Coming Soon</div>
+</div>
 
 
